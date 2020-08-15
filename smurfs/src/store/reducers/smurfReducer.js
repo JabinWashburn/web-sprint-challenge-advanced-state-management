@@ -1,4 +1,4 @@
-import { SMURF_LOADING, SMURF_SUCCESS, SMURF_FAIL,SMURF_ADD } from '../actions/smurfActions'
+import { SMURF_LOADING, SMURF_SUCCESS, SMURF_FAIL, SMURF_ADD } from '../actions/smurfActions'
 
 const initialState = {
     smurfs: [],

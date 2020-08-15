@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 
 
 function SmurfCard(props) {
+    console.log('from smurfcard', props)
     const {name, age, height} = props.smurf
     return(
         <div>

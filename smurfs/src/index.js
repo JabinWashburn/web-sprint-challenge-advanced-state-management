@@ -11,7 +11,7 @@ import { useReducer } from './store/reducers/smurfReducer'
 const store = createStore(useReducer, applyMiddleware(thunk, logger))
 
 ReactDOM.render(
-<Provider store={store } >
+<Provider store={store} >
 
 <App />
 

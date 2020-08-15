@@ -6,7 +6,8 @@ function SmurfForm(props){
     const [form, setForm] = useState({
         name: '',
         age: '',
-        weight: ''
+        height: '',
+        id: Math.random()
     })
 
     const handleChange = (e) => {
@@ -17,8 +18,12 @@ function SmurfForm(props){
     }
 
     const handleSubmit = (e) => {
-        e.preventDefault()
         props.addSmurf(form)
+        setForm({
+            name: '',
+            age: '',
+            height: ''
+        })
     }
 
     return(
