@@ -7,8 +7,8 @@ function SmurfCard(props) {
     return(
         <div>
             <h2>{name}</h2>
-            <p>{age}</p>
-            <p>{height}</p>
+            <p>Age: {age}</p>
+            <p>Height: {height}</p>
         </div>
     )
 }

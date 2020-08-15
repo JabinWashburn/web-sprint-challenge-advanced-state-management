@@ -1,4 +1,4 @@
-import { SMURF_LOADING, SMURF_SUCCESS, SMURF_FAIL } from '../actions/smurfActions'
+import { SMURF_LOADING, SMURF_SUCCESS, SMURF_FAIL,SMURF_ADD } from '../actions/smurfActions'
 
 const initialState = {
     smurfs: [],
@@ -24,6 +24,12 @@ export const useReducer = (state = initialState, action) => {
                     ...state,
                     error: action.payload,
                     loading: false
+                }
+            case SMURF_ADD:
+                return{
+                    ...state,
+                    loading: false,
+                    smurfs: [...state.smurfs, action.payload]
                 }
         default:
             return state
